@@ -26,3 +26,16 @@ botom2.innerText="no peligro"
 
 document.body.appendChild(botom);
 document.body.appendChild(botom2);
+
+// como realizar un eventos
+
+botom.addEventListener("click",()=>{ 
+peligro = false;
+recordando = spiderman(peligro);
+window.location.href="index.html";
+document.body.innerHTML=`
+
+<h1> ${recordando} </h1>
+<buttom> id= 'botom2'> <a href='index.html'>volver</a></buttom>
+`;
+ });
